@@ -37,7 +37,8 @@ public:
         queue_array[rear] = num;
     }
 
-    
+    void remove() {
+        
 };
 int main()
 {
