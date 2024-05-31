@@ -57,10 +57,24 @@ public:
     }
 
     void display() {
-        
-};
-int main()
-{
-    
+        int front_position = front;
+        int rear_position = rear;
+
+        if (front == -1) {
+            cout << "queue is empty\n";
+            return;
+        }
+
+        cout << "\nElements in the queue are...\n";
+
+        // jika FRONT_position <= REAR_position, iterasi dari FRONT hingga REAR
+
+        if (front_position <= rear_position) {
+            while (front_position <= rear_position) {
+                cout << queue_array[front_position] << "   ";
+                front_position++;
+            }
+            cout << endl;
+       
 }
 
